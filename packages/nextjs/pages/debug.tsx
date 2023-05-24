@@ -19,7 +19,7 @@ const Debug: NextPage = () => {
               <div className="flex flex-row gap-2 w-full max-w-7xl pb-1 px-6 lg:px-10 flex-wrap">
                 {contractNames.map(contractName => (
                   <button
-                    className={`btn btn-secondary btn-sm normal-case font-thin ${
+                    className={`btn btn-secondary btn-lg normal-case font-semibold ${
                       contractName === selectedContract ? "bg-base-300" : "bg-base-100"
                     }`}
                     key={contractName}
@@ -41,7 +41,7 @@ const Debug: NextPage = () => {
         )}
       </div>
       <div className="text-center mt-8 bg-secondary p-10">
-        <h1 className="text-4xl my-0">Debug Contracts</h1>
+        <h1 className="text-4xl my-0">Updated Debug Contracts</h1>
         <p className="text-neutral">
           You can debug & interact with your deployed contracts here.
           <br /> Check{" "}
